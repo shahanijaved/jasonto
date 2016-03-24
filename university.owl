@@ -1,0 +1,175 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/javedahmed/ontologies/2016/2/untitled-ontology-56#"
+     xml:base="http://www.semanticweb.org/javedahmed/ontologies/2016/2/untitled-ontology-56"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/javedahmed/ontologies/2016/2/untitled-ontology-56"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/javedahmed/ontologies/2016/2/untitled-ontology-56#studies -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/javedahmed/ontologies/2016/2/untitled-ontology-56#studies">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/javedahmed/ontologies/2016/2/untitled-ontology-56#Module"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/javedahmed/ontologies/2016/2/untitled-ontology-56#Student"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/javedahmed/ontologies/2016/2/untitled-ontology-56#teaches -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/javedahmed/ontologies/2016/2/untitled-ontology-56#teaches">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/javedahmed/ontologies/2016/2/untitled-ontology-56#Lecturer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/javedahmed/ontologies/2016/2/untitled-ontology-56#Module"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/javedahmed/ontologies/2016/2/untitled-ontology-56#first_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/javedahmed/ontologies/2016/2/untitled-ontology-56#first_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/javedahmed/ontologies/2016/2/untitled-ontology-56#Person"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/javedahmed/ontologies/2016/2/untitled-ontology-56#last_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/javedahmed/ontologies/2016/2/untitled-ontology-56#last_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/javedahmed/ontologies/2016/2/untitled-ontology-56#Person"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/javedahmed/ontologies/2016/2/untitled-ontology-56#staffID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/javedahmed/ontologies/2016/2/untitled-ontology-56#staffID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/javedahmed/ontologies/2016/2/untitled-ontology-56#Lecturer"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/javedahmed/ontologies/2016/2/untitled-ontology-56#studentID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/javedahmed/ontologies/2016/2/untitled-ontology-56#studentID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/javedahmed/ontologies/2016/2/untitled-ontology-56#Student"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/javedahmed/ontologies/2016/2/untitled-ontology-56#CSModule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/javedahmed/ontologies/2016/2/untitled-ontology-56#CSModule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/javedahmed/ontologies/2016/2/untitled-ontology-56#Module"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/javedahmed/ontologies/2016/2/untitled-ontology-56#Lecturer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/javedahmed/ontologies/2016/2/untitled-ontology-56#Lecturer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/javedahmed/ontologies/2016/2/untitled-ontology-56#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/javedahmed/ontologies/2016/2/untitled-ontology-56#MathModule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/javedahmed/ontologies/2016/2/untitled-ontology-56#MathModule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/javedahmed/ontologies/2016/2/untitled-ontology-56#Module"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/javedahmed/ontologies/2016/2/untitled-ontology-56#Module -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/javedahmed/ontologies/2016/2/untitled-ontology-56#Module"/>
+    
+
+
+    <!-- http://www.semanticweb.org/javedahmed/ontologies/2016/2/untitled-ontology-56#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/javedahmed/ontologies/2016/2/untitled-ontology-56#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/javedahmed/ontologies/2016/2/untitled-ontology-56#Student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/javedahmed/ontologies/2016/2/untitled-ontology-56#Student">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/javedahmed/ontologies/2016/2/untitled-ontology-56#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/javedahmed/ontologies/2016/2/untitled-ontology-56#CSModule"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/javedahmed/ontologies/2016/2/untitled-ontology-56#Lecturer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/javedahmed/ontologies/2016/2/untitled-ontology-56#MathModule"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/javedahmed/ontologies/2016/2/untitled-ontology-56#Student"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+
